@@ -1,0 +1,16 @@
+ 
+{%extends 'base.html'%}
+{%block content%}
+
+<h3> Planets by name </h3>
+ {%for a in planets%}
+ <br> {{a}} </br>
+ {%endfor%}
+<br>
+ <form action="search" method="GET" >
+    enter a planet name you wanna know details&save it : <input type= "text" name="p_name">
+    <input type="submit">
+</form>
+
+{%endblock%}
+
